@@ -23,9 +23,7 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3];
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5];
 
 //const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
-// Add your functions below:
-
-
+//verify if is a true credit Card
 const validateCred = array => {
     let sumNum = 0;
     for(let i = 0; i <= array.length-1; i++){
@@ -51,7 +49,7 @@ const validateCred = array => {
         return false;
     }
 }
-     
+ // find the invalid cards in a group card    
 const findInvalidCards = arr =>{
  let newArr = [];
  for(let i = 0; i < arr.length; i++){
@@ -63,7 +61,7 @@ const findInvalidCards = arr =>{
 
  return newArr;
 }
-
+//Verify what companie give fake credit card
 const invalidCardCompanies = invalidCard => {
   let invalidCompaniesCard = [];
   for(let i = 0; i < invalidCard.length; i++){
@@ -94,12 +92,9 @@ const invalidCardCompanies = invalidCard => {
         }
     }
   }
-
-
-
-  
   return console.log(invalidCompaniesCard);
 }
+//Transform the String to a number
 const convertString = (cardToString) => {
   let newArray = [];
   for (let i = 0; i < cardToString.length; i++){
