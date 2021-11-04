@@ -94,6 +94,10 @@ const invalidCardCompanies = invalidCard => {
         }
     }
   }
+
+
+
+  
   return console.log(invalidCompaniesCard);
 }
 const convertString = (cardToString) => {
